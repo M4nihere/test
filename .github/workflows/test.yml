@@ -12,4 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name : copying index.html
-      run: cp index.html /home/manish
+      run:  |
+        cp index.html /home/manish
+        cd /home/manish && mkdir test
+        cp index.html /home/manish/test
