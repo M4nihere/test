@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: rahul
-
-    steps: copying index.html
-    run: cp index.html /home/manish
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name : copying index.html
+      run: cp index.html /home/manish
